@@ -1,0 +1,71 @@
+\documentclass[10pt]{moderncv}
+
+% moderncv styles
+\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}       % idem
+
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+%\usepackage[T1]{fontenc}
+
+\usepackage{units}
+
+\usepackage[scale=0.84]{geometry}
+\setlength{\hintscolumnwidth}{3cm} % Width of the left column.
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Roger} 
+\familyname{Caminal Armadans}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Castellar del Vall\`{e}s 87}{08208 Sabadell, Spain}    % optional, remove the line if not wanted
+\mobile{+34 616 165 933}                    % optional, remove the line if not wanted
+\email{roger.caminal@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Last Modified: September 23, 2009}                 % optional, remove the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+%\newif\ifIsAcademic
+%\IsAcademicfalse
+%\IsAcademictrue
+
+\maketitle
+
+\section{\textsc{Personal Information}}
+\cvitem{Date of Birth}{May 14, 1988}
+\cvitem{Place of Birth}{Sant Cugat del Vall\`{e}s, Spain}
+\cvitem{Sex}{Male}
+\cvitem{Nationality}{Spanish}
+\closesection{}
+
+\input{academic.tex}
+\input{languagesandskills.tex}
+\input{other.tex}
+
+%\section{\textsc{Updated}}
+%\cvitem{}{\today}
+%\cvitem{}{June 2nd, 2013}
+
+\end{document}
